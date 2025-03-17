@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spoorti Pasannavar | Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm">
+    <div class="container">
+        <a class="navbar-brand fw-bold custom-brand" href="#">Spoorti Pasannavar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link custome-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link custom-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link custom-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<!-- Hero Section -->
+<header class="text-center text-white hero-section">
+    <div class="container py-5">
+        <h1 class="fw-bold hero-title">Aspiring Software Developer</h1>
+        <p class="hero-subtitle">Building the future, one line of code at a time.</p>
+        <a href="#projects" class="btn btn-light custom-btn">View My Projects</a>
+        <a href="https://drive.google.com/file/d/1gHh2cQD_46ufFsCp6a2N8BQEEgQvqxgX/view?usp=sharing" class="btn btn-light custom-btn ms-3" target="_blank">Download My Resume</a>
+    </div>
+</header>
+
+<!-- Internal CSS -->
+<style>
+    /* Button Styling (Same for Both Buttons) */
+    .custom-btn {
+        font-size: 18px;
+        font-weight: 500;
+        padding: 10px 20px;
+        transition: all 0.3s ease;
+        border-radius: 5px;
+    }
+
+    .custom-btn:hover {
+        background-color: #0056b3 !important;
+        color: white !important;
+        transform: scale(1.1);
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+
+
+    /* Navbar Brand Hover Effect */
+    .custom-brand {
+        font-size: 28px;
+        font-weight: bold;
+        color: #333;
+        transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .custom-brand:hover {
+        color: #007bff;
+        transform: scale(1.1);
+    }
+
+    /* Navbar Links Hover Effect */
+    .custom-link {
+        font-weight: 500;
+        transition: color 0.3s ease, transform 0.2s ease;
+    }
+
+    .custom-link:hover {
+        color: #007bff !important;
+        transform: scale(1.05);
+    }
+
+    /* Hero Section Styling */
+    .hero-section {
+        background: linear-gradient(to right, #007bff, #0056b3); /* Modern Gradient */
+        padding: 50px 0;
+        transition: background 0.5s ease;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+        transition: transform 0.3s ease, letter-spacing 0.3s ease;
+    }
+
+    .hero-title:hover {
+        transform: scale(1.05);
+        letter-spacing: 1px;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+        opacity: 0.9;
+    }
+
+    /* Button Hover Effect */
+    .custom-btn {
+        font-size: 18px;
+        font-weight: 500;
+        transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .custom-btn:hover {
+        background-color: #0056b3 !important;
+        color: white !important;
+        transform: scale(1.1);
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+</style>
+
+
+    <!-- About Section -->
+   <!-- About Section -->
+
+
+
+        <!-- About Me Section -->
+<section id="about" class="container py-5">
+    <div class="row align-items-center">
+        <!-- Profile Image -->
+        <div class="col-md-4 text-center">
+            <img src="image/photo.jpg" alt="Spoorti Pasannavar" class="profile-img img-fluid">
+        </div>
+
+        <!-- About Me & Skills Section -->
+        <div class="col-md-8 about-container p-4 rounded shadow-sm">
+            <h2 class="fw-bold">About Me</h2>
+            <p>Hello! I'm <strong>Spoorti Pasannavar</strong>, a Software Engineering student with knowledge of Python, Web Development, and teamwork. A quick learner, eager to adapt to new technical challenges and contribute to high-quality projects. Seeking an entry-level opportunity to apply and grow my skills as a Software Engineer.</p>
+
+            <!-- Skills Section -->
+            <h4 class="fw-bold mt-3">Skills</h4>
+            <div class="d-flex flex-wrap gap-2">
+                <span class="badge skill-badge">HTML</span>
+                <span class="badge skill-badge">CSS (Bootstrap)</span>
+                <span class="badge skill-badge">Python Programming</span>
+                <span class="badge skill-badge">SQL</span>
+                <span class="badge skill-badge">OOPS With Java</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Internal CSS for Styling -->
+<style>
+    /* Profile Image Styling */
+    .profile-img {
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 50%; /* Circular Shape */
+        border: 3px solid #ddd; /* Light Border */
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Soft Shadow */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .profile-img:hover {
+        transform: scale(1.1); /* Zoom Effect */
+        box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    /* About Me Section Styling */
+    .about-container {
+        background: #fff; /* White Background */
+        border-left: 5px solid #007bff; /* Left Border for Accent */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .about-container:hover {
+        transform: scale(1.02); /* Slight Zoom */
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle Shadow */
+    }
+
+    /* Skill Badges Styling */
+    .skill-badge {
+        background-color: #f8f9fa; /* Light Gray */
+        color: #333;
+        padding: 10px 15px;
+        font-size: 14px;
+        border-radius: 20px;
+        transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .skill-badge:hover {
+        background-color: #007bff;
+        color: white;
+        transform: scale(1.1);
+    }
+</style>
+
+
+    <!-- Soft Skills Section -->
+<section id="soft-skills" class="container py-5 text-center">
+    <h2 class="fw-bold mb-4">Soft Skills</h2>
+    <div class="d-flex justify-content-center gap-4 flex-wrap">
+        <!-- Skill 1 -->
+        <div class="soft-skill">
+            <p class="skill-title">Effective Communication</p>
+            <div class="progress soft-progress">
+                <div class="progress-bar bg-primary skill-bar" style="width: 90%;"></div>
+            </div>
+        </div>
+        <!-- Skill 2 -->
+        <div class="soft-skill">
+            <p class="skill-title">Teamwork</p>
+            <div class="progress soft-progress">
+                <div class="progress-bar bg-success skill-bar" style="width: 85%;"></div>
+            </div>
+        </div>
+        <!-- Skill 3 -->
+        <div class="soft-skill">
+            <p class="skill-title">Time Management</p>
+            <div class="progress soft-progress">
+                <div class="progress-bar bg-warning skill-bar" style="width: 80%;"></div>
+            </div>
+        </div>
+        <!-- Skill 4 -->
+        <div class="soft-skill">
+            <p class="skill-title">Interpersonal Skills</p>
+            <div class="progress soft-progress">
+                <div class="progress-bar bg-danger skill-bar" style="width: 85%;"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Internal CSS for Styling -->
+<style>
+    /* Soft Skills Container */
+    #soft-skills {
+        background: linear-gradient(to right, #f8f9fa, #e9ecef);
+        border-radius: 10px;
+        padding: 50px 20px;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    /* Soft Skill Box */
+    .soft-skill {
+        text-align: center;
+        padding: 15px;
+        background: white;
+        border-radius: 8px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        width: 180px;
+    }
+
+    /* Hover Effect on Soft Skills */
+    .soft-skill:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Skill Title Styling */
+    .skill-title {
+        font-weight: bold;
+        margin-bottom: 5px;
+        transition: color 0.3s ease;
+    }
+
+    .soft-skill:hover .skill-title {
+        color: #007bff;
+    }
+
+    /* Progress Bar */
+    .soft-progress {
+        width: 150px;
+        height: 12px;
+        border-radius: 6px;
+        overflow: hidden;
+        background: #ddd;
+    }
+
+    /* Animated Progress Bar */
+    .skill-bar {
+        transition: width 1s ease-in-out;
+    }
+</style>
+
+
+
+<!-- Education Section -->
+<section id="education" class="py-5 text-center">
+    <div class="container">
+        <h2 class="fw-bold mb-4">Education</h2>
+        <div class="education-card">
+            <div class="icon">
+                <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="education-content">
+                <h4 class="fw-bold">Bachelor of Information Science and Engineering</h4>
+                <p class="text-muted">Basaveshwar Engineering College, Bagalkote</p>
+                <p><strong>CGPA:</strong> 8.38</p>
+                <span class="date">2021 – 2025</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Internal CSS for Styling -->
+<style>
+    /* Education Section Styling */
+    #education {
+        background: linear-gradient(to right, #f8f9fa, #eef1f6);
+        padding: 60px 20px;
+    }
+
+    /* Education Card */
+    .education-card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: white;
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+        max-width: 900px;
+        margin: auto;
+        transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    }
+
+    /* Icon Styling */
+    .icon {
+        font-size: 3rem;
+        background: linear-gradient(135deg, #6a11cb, #2575fc);
+        padding: 20px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 20px;
+        color: white;
+        transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    /* Hover Effect */
+    .education-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        background: linear-gradient(to right, #ffffff, #f1f4f8);
+    }
+
+    .education-card:hover .icon {
+        transform: scale(1.1);
+        background: linear-gradient(135deg, #2575fc, #6a11cb);
+    }
+
+    /* Education Content */
+    .education-content {
+        text-align: left;
+    }
+
+    /* Date Styling */
+    .date {
+        font-size: 1rem;
+        color: #444;
+        font-weight: bold;
+        display: block;
+        margin-top: 5px;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .education-card {
+            flex-direction: column;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .icon {
+            margin-bottom: 15px;
+        }
+    }
+</style>
+
+<!-- Font Awesome Icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="bg-light py-5">
+        <div class="container text-center">
+            <h2 class="fw-bold">Featured Projects</h2>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <h4>Online Price Comparison Website</h4>
+                        <p>Fetches real-time product prices and compares them using web scraping.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project1Modal">View Project</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <h4>College Grievance Portal</h4>
+                        <p>A platform for students to submit and track grievances efficiently.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project2Modal">View Project</button>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <h4>Vehicle Document Management</h4>
+                        <p>A system for organizing and retrieving vehicle-related documents.</p>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project3Modal">View Project</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modals -->
+    
+    <!-- Project 1 Modal -->
+<!-- Project 1 Modal -->
+<div class="modal fade" id="project1Modal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content custom-modal">
+            <div class="modal-header">
+                <h5 class="modal-title fw-bold project-title">Online Price Comparison Website</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="project-image">
+                    <img src="image/bottle compare.png" alt="Project Image" class="img-fluid rounded shadow project-img">
+                </div>
+                <p class="mt-3"><b>This project fetches real-time product prices and compares them using web scraping techniques. It helps users find the best prices across multiple e-commerce platforms.</b></p>
+                <p><strong><b>Technologies Used:</b></strong><b> Python, Web Scraping, BeautifulSoup,Streamlit.</b></p>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="btn btn-primary view-project-btn">View Project</a>
+                <button type="button" class="btn btn-secondary close-btn" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Internal CSS for Hover Effects -->
+<style>
+    /* Hover effect for modal box */
+    .custom-modal {
+        border-radius: 12px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .custom-modal:hover {
+        transform: scale(1.02);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Modal Header Background */
+    .modal-header {
+        background: linear-gradient(135deg, #6a11cb, #2575fc);
+        color: white;
+        border-radius: 12px 12px 0 0;
+    }
+
+    /* Hover effect for Project Title */
+    .project-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: white;
+        transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .project-title:hover {
+        color: #ffeb3b; /* Change color on hover */
+        transform: scale(1.1);
+    }
+
+    /* Close Button Styling */
+    .btn-close {
+        filter: invert(1);
+        transition: transform 0.3s ease;
+    }
+
+    .btn-close:hover {
+        transform: scale(1.2);
+    }
+
+    /* Image Styling */
+   /* Image Styling */
+.project-img {
+    width: 100% !important; /* Ensures full width */
+    height: auto !important; /* Maintains aspect ratio */
+    object-fit: contain; /* Ensures full image visibility without cropping */
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect for Image */
+.project-img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+    /* Modal Footer */
+    .modal-footer {
+        justify-content: space-between;
+        border-top: none;
+    }
+
+    /* Hover Effect for View Project Button */
+    .view-project-btn {
+        background: linear-gradient(135deg, #6a11cb, #2575fc);
+        border: none;
+        transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .view-project-btn:hover {
+        background: linear-gradient(135deg, #2575fc, #6a11cb);
+        transform: scale(1.1);
+    }
+
+    /* Hover Effect for Close Button */
+    .close-btn {
+        transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .close-btn:hover {
+        background: #dc3545;
+        color: white;
+        transform: scale(1.1);
+    }
+</style> 
+
+
+  <!-- Project 2 Modal -->
+<div class="modal fade" id="project2Modal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content custom-modal">
+            <div class="modal-header">
+                <h5 class="modal-title fw-bold project-title">College Grievance Portal</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="project-image">
+                    <img src="image/grievance.png" alt="Project Image" class="img-fluid rounded shadow project-img">
+                </div>
+                <p class="mt-3"><b>This portal allows students to submit and track grievances related to academic and non-academic issues. It categorizes complaints for better resolution.</b></p>
+                <p><strong><b>Technologies Used:</b></strong><b> React.js, Node.js, Bootstrap, SQL.</b></p>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="btn btn-primary view-project-btn">View Project</a>
+                <button type="button" class="btn btn-secondary close-btn" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Internal CSS for Hover Effects -->
+<style>
+    /* Hover effect for modal box */
+    .custom-modal {
+        border-radius: 12px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .custom-modal:hover {
+        transform: scale(1.02);
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Modal Header Background */
+    .modal-header {
+        background: linear-gradient(135deg, #ff6a00, #ee0979);
+        color: white;
+        border-radius: 12px 12px 0 0;
+    }
+
+    /* Hover effect for Project Title */
+    .project-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: white;
+        transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .project-title:hover {
+        color: #ffeb3b; /* Change color on hover */
+        transform: scale(1.1);
+    }
+
+    /* Close Button Styling */
+    .btn-close {
+        filter: invert(1);
+        transition: transform 0.3s ease;
+    }
+
+    .btn-close:hover {
+        transform: scale(1.2);
+    }
+/* Image Styling */
+/* Image Styling */
+.project-img {
+    width: 80% !important; /* Set width */
+    height: auto !important; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure full image visibility */
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect for Image */
+.project-img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+    /* Modal Footer */
+    .modal-footer {
+        justify-content: space-between;
+        border-top: none;
+    }
+
+    /* Hover Effect for View Project Button */
+    .view-project-btn {
+        background: linear-gradient(135deg, #ff6a00, #ee0979);
+        border: none;
+        transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .view-project-btn:hover {
+        background: linear-gradient(135deg, #ee0979, #ff6a00);
+        transform: scale(1.1);
+    }
+
+    /* Hover Effect for Close Button */
+    .close-btn {
+        transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .close-btn:hover {
+        background: #dc3545;
+        color: white;
+        transform: scale(1.1);
+    }
+</style>
+
+
+    <!-- Project 3 Modal -->
+<div class="modal fade" id="project3Modal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content custom-modal">
+            <div class="modal-header">
+                <h5 class="modal-title fw-bold project-title">Vehicle Document Management</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <div class="project-image">
+                    <img src="image/vehicle.jfif" alt="Project Image" class="img-fluid rounded shadow project-img">
+                </div>
+                <p class="mt-3"><b>This system helps vehicle owners securely store and manage important documents like registration, insurance, and permits digitally.</b></p>
+                <p><strong><b>Technologies Used:</b></strong><b> HTML, CSS, JavaScript, PHP, SQL</b></p>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="btn btn-primary view-project-btn">View Project</a>
+                <button type="button" class="btn btn-secondary close-btn" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Internal CSS for Hover Effects -->
+<style>
+    /* Hover effect for modal box */
+    .custom-modal {
+        border-radius: 12px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .custom-modal:hover {
+        transform: scale(1.02);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Modal Header Background */
+    .modal-header {
+        background: linear-gradient(135deg, #007bff, #6610f2);
+        color: white;
+        border-radius: 12px 12px 0 0;
+    }
+
+    /* Hover effect for Project Title */
+    .project-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: white;
+        transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .project-title:hover {
+        color: #ffeb3b;
+        transform: scale(1.1);
+    }
+
+    /* Close Button Styling */
+    .btn-close {
+        filter: invert(1);
+        transition: transform 0.3s ease;
+    }
+
+    .btn-close:hover {
+        transform: scale(1.2);
+    }
+
+    /* Image Styling */
+    .project-img {
+        width: 100%;
+        max-height: 250px;
+        object-fit: cover;
+        border-radius: 8px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    /* Hover Effect for Image */
+    .project-img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Modal Footer */
+    .modal-footer {
+        justify-content: space-between;
+        border-top: none;
+    }
+
+    /* Hover Effect for View Project Button */
+    .view-project-btn {
+        background: linear-gradient(135deg, #007bff, #6610f2);
+        border: none;
+        transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .view-project-btn:hover {
+        background: linear-gradient(135deg, #6610f2, #007bff);
+        transform: scale(1.1);
+    }
+
+    /* Hover Effect for Close Button */
+    .close-btn {
+        transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .close-btn:hover {
+        background: #dc3545;
+        color: white;
+        transform: scale(1.1);
+    }
+</style>
+
+   <section id="contact" class="py-5 contact-section">
+    <div class="container text-center">
+        <h2 class="fw-bold contact-title">Get In Touch</h2>
+        <p class="contact-text">Interested in collaborating on a project? I'd love to hear from you!</p>
+
+        <!-- Email Button -->
+        <a href="mailto:pasannavarbasavaraj@gmail.com" class="btn contact-btn">Email Me</a>
+
+        <!-- LinkedIn Button -->
+        <a href="https://www.linkedin.com/in/spoorti-pasannavar-2b178a31b/" target="_blank" class="btn contact-btn">Connect on LinkedIn</a>
+
+        <!-- Contact Number -->
+        <p class="mt-3 contact-number">Or reach me at: <strong>+91 8088847208</strong></p>
+    </div>
+</section>
+
+<!-- Internal CSS for Styling and Hover Effects -->
+<style>
+    /* Contact Section Styling */
+    .contact-section {
+        background: linear-gradient(135deg, #1e3c72, #2a5298);
+        color: white;
+        padding: 60px 0;
+        transition: background 0.3s ease-in-out;
+    }
+
+    /* Heading Styling */
+    .contact-title {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 15px;
+        transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    .contact-title:hover {
+        transform: scale(1.05);
+        color: #ffeb3b;
+    }
+
+    /* Contact Text Styling */
+    .contact-text {
+        font-size: 1.2rem;
+        opacity: 0.9;
+    }
+
+    /* Contact Buttons */
+    .contact-btn {
+        background: white;
+        color: #1e3c72;
+        font-weight: bold;
+        padding: 12px 20px;
+        border-radius: 8px;
+        transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+        display: inline-block;
+        text-decoration: none;
+        margin: 8px;
+    }
+
+    .contact-btn:hover {
+        background: #ffeb3b;
+        color: #1e3c72;
+        transform: scale(1.1);
+        box-shadow: 0 4px 10px rgba(255, 235, 59, 0.5);
+    }
+
+    /* Contact Number */
+    .contact-number {
+        font-size: 1.2rem;
+        font-weight: bold;
+        transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .contact-number:hover {
+        color: #ffeb3b;
+        transform: scale(1.05);
+    }
+</style>
+
+
+  <!-- Footer -->
+<footer class="footer-section text-center py-4">
+    <div class="container">
+        <p class="footer-text">&copy; 2025 Spoorti Pasannavar. All rights reserved.</p>
+        <div class="social-links">
+            <a href="mailto:pasannavarbasavaraj@gmail.com" class="footer-link">
+                <i class="fas fa-envelope"></i> Email
+            </a>
+            <a href="https://www.linkedin.com/in/spoorti-pasannavar-2b178a31b/" target="_blank" class="footer-link">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="#" class="footer-link">
+                <i class="fas fa-globe"></i> Portfolio
+            </a>
+        </div>
+    </div>
+</footer>
+
+<!-- Bootstrap & Font Awesome Script -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+
+<!-- Internal CSS -->
+<style>
+    /* Footer Styling */
+    .footer-section {
+        background: #000; /* Black background */
+        color: white;
+        padding: 20px 0;
+        transition: background 0.3s ease-in-out;
+        box-shadow: 0 -4px 10px rgba(255, 255, 255, 0.1);
+    }
+
+    /* Footer Text */
+    .footer-text {
+        font-size: 1.1rem;
+        font-weight: bold;
+        transition: color 0.3s ease-in-out, transform 0.3s ease;
+    }
+
+    .footer-text:hover {
+        color: #ffeb3b;
+        transform: scale(1.05);
+    }
+
+    /* Social Links */
+    .social-links {
+        margin-top: 10px;
+    }
+
+    .footer-link {
+        color: white;
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: bold;
+        margin: 0 15px;
+        padding: 8px 15px;
+        border-radius: 8px;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    }
+
+    .footer-link i {
+        font-size: 1.2rem;
+    }
+
+    .footer-link:hover {
+        background: #ffeb3b;
+        color: #000;
+        transform: scale(1.1);
+        box-shadow: 0 4px 10px rgba(255, 235, 59, 0.5);
+    }
+</style>
+
+
